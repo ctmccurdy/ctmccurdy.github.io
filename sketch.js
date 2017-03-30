@@ -15,24 +15,52 @@ function setup() {
 
 
    leftCol[0] = " ";
-   leftCol[1] = "Physical Experience";
-   leftCol[2] = "Medical Product";
-   leftCol[3] = "Social Innovation";
-   leftCol[4] = "Innovation Policy";
-   leftCol[5] = "Tangible Interaction";
-   leftCol[6] = "Systems Solutions";
-   leftCol[7] = "Empowering Experience";
-   leftCol[8] = "Economic Policy";
-   leftCol[9] = "(wildcard)";
-   leftCol[10] = "(wildcard)";
-   leftCol[11] = "(wildcard)";
+   leftCol[1] = "Sustainability";
+   leftCol[2] = "Focusing on Performance";
+   leftCol[3] = "Impact";
+   leftCol[4] = "Aesthetics";
+   leftCol[5] = "Social Innovation";
+   leftCol[6] = "Overarching Story";
+   
+   leftCol[7] = "The Food and Drug Administration";
+   leftCol[8] = "Service Design";
+   leftCol[9] = "Apps";
+
+   leftCol[10] = "Imperfect Technology";
+   leftCol[11] = "Risky Ventures";
+   leftCol[12] = "Long Transitions ";
+   leftCol[13] = "Empathy "; 
+
+   leftCol[14] = "People ";
+   leftCol[15] = "Things ";
+   leftCol[16] = "Imagining Futures";
+   leftCol[17] = " ";
+
 
    rightCol[0] = " ";
-   rightCol[1] = "Changes Lives";
-   rightCol[2] = "Changes Minds";
-   rightCol[3] = "Changes Expectations";
-   rightCol[4] = "Changes Economies";
-   rightCol[5] = "(wildcard)";
+   rightCol[1] = "Time";
+   rightCol[2] = "Design Thinking";
+   rightCol[3] = "Ecosystems";
+   rightCol[4] = "Culture";
+   rightCol[5] = "Backcasting";
+
+   rightCol[6] = "Healthcare Delivery";
+   rightCol[7] = "Robotics";
+   rightCol[8] = "Caregiving";
+
+   rightCol[9] = "Ecosystems ";
+   rightCol[10] = "Public Policy ";
+   rightCol[11] = "Competitiveness ";
+   rightCol[12] = "Ecosystem Innovation ";
+
+
+   rightCol[13] = "the Possible ";
+   rightCol[14] = "the Practical ";
+   rightCol[15] = "the Plausible ";
+   rightCol[16] = " ";
+
+
+
 }
 
 
@@ -46,17 +74,17 @@ function draw() {
   var textLeft = 200;
   textAlign(LEFT,CENTER)
   rectMode(CENTER)
-  text("The", textLeft, 200);
-  text("That", textLeft + 500, 200);
-  rect(textLeft + 300, 200, 200, 72);
-  rect(textLeft + 800, 200, 200, 72);
+  text("How might", textLeft, 200);
+  text("change", textLeft, 300);
+  rect(textLeft + 700, 200, 600, 72);
+  rect(textLeft + 600, 300, 600, 72);
 
   push();
   fill('#88B04B');
   fill(255);
-  textSize(16);
-  text(leftCol[retriever1], textLeft + 200+6, 200);
-  text(rightCol[retriever2], textLeft + 700+6, 200);
+  textSize(36);
+  text(leftCol[retriever1], textLeft + 400+12, 200);
+  text(rightCol[retriever2], textLeft + 300+12, 300);
   pop();
 
   push();
@@ -67,7 +95,14 @@ function draw() {
   //rotate(PI/3.0);
   }
   rect(120,200,40,40);
+
+  textSize(24);
+  text("#ISDANEDDC #howmight", textLeft, 500);
   pop();
+
+  
+
+
 
    var d = dist(mouseX, mouseY, 120, 200);
    if (d < 20) {
@@ -87,9 +122,9 @@ function mousePressed() {
     g = random(255);
     b = random(255);
 
-      retriever1 = int(random(1,11));
+      retriever1 = int(random(1,17));
 
-      retriever2 = int(random(1,5));
+      retriever2 = int(random(1,16));
 
 
   }
