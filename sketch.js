@@ -7,8 +7,11 @@ var leftCol = [];
 var rightCol = [];
 
 
+var counter = 0;
+
 function setup() {
   createCanvas(2000, 800);
+  frameRate(24);
    r = random(255);
    g = random(255);
    b = random(255);
@@ -83,9 +86,24 @@ function draw() {
   fill('#88B04B');
   fill(255);
   textSize(36);
+
+  if (counter <30){
   text(leftCol[retriever1], textLeft + 400+12, 200);
+}
+if (counter < 5){
   text(rightCol[retriever2], textLeft + 300+12, 300);
+}
+
+  // fill(0, counter+100);
+  // rect(textLeft + 700, 200, 600, 72);
+  // rect(textLeft + 600, 300, 600, 72);
+
+
+
+
   pop();
+
+
 
   push();
   fill('#88B04B');
@@ -94,14 +112,25 @@ function draw() {
   if (spinning == 1){
   //rotate(PI/3.0);
   }
-  rect(120,200,40,40);
+  translate(120,200);
+  if (counter > 40){
+    rotate(-counter/PI);
+  }
+  rect(0,0,40,40);
+  //rect(120,200,40,40);
+  pop();
 
+  push();
+  fill(r,g,b);
   textSize(24);
   text("#ISDANEDDC #howmight", textLeft, 500);
   pop();
 
   
 
+  if (counter > 0){
+    counter = counter - 1;
+  }
 
 
    var d = dist(mouseX, mouseY, 120, 200);
@@ -126,6 +155,7 @@ function mousePressed() {
 
       retriever2 = int(random(1,16));
 
+      counter = 50;
 
   }
 }
