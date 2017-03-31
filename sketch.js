@@ -18,52 +18,92 @@ function setup() {
 
 
    leftCol[0] = " ";
-   leftCol[1] = "Sustainability";
-   leftCol[2] = "Focusing on Performance";
-   leftCol[3] = "Impact";
-   leftCol[4] = "Aesthetics";
-   leftCol[5] = "Social Innovation";
-   leftCol[6] = "Overarching Story";
-   
-   leftCol[7] = "The Food and Drug Administration";
-   leftCol[8] = "Service Design";
-   leftCol[9] = "Apps";
 
-   leftCol[10] = "Imperfect Technology";
-   leftCol[11] = "Risky Ventures";
-   leftCol[12] = "Long Transitions ";
-   leftCol[13] = "Empathy "; 
+   //MARK G
+   leftCol[1] = "Healthier Future";
+   leftCol[2] = "Science/Technology";
+   leftCol[3] = "Usability Studies";
+   leftCol[4] = "Heuristic Analyses";
+   leftCol[5] = "Aging in Place";
+   leftCol[6] = "Robots";
+   leftCol[7] = "Caregiving";
 
-   leftCol[14] = "People ";
-   leftCol[15] = "Things ";
-   leftCol[16] = "Imagining Futures";
-   leftCol[17] = " ";
+//Charlie C
+   leftCol[8] = "Sustainability";
+   leftCol[9] = "Performance";
+   leftCol[10] = "Aesthetics";
+   leftCol[11] = "Social Innovation";
+   leftCol[12] = "Impact";
+   leftCol[13] = "Designing with  "; 
+   leftCol[14] = "Strategy ";
+
+//Mark H
+   leftCol[15] = "Design Thinking ";
+   leftCol[16] = "Economic Developement";
+   leftCol[17] = "New Functionalities ";
+   leftCol[18] = "New Experiences ";
+   leftCol[19] = "Aging ";
+   leftCol[20] = "Senior Caregiving ";
+   leftCol[21] = "Systems Thinking ";
+   leftCol[22] = "Human Centered Thinking ";
+
+//Matt W
+   leftCol[23] = "People ";
+   leftCol[24] = "Things ";
+   leftCol[25] = "the Possible ";
+
+
+   leftCol[26] = " ";
+   leftCol[27] = " ";
+   leftCol[28] = " ";
+   leftCol[29] = " ";
+   leftCol[30] = " ";
+   leftCol[31] = " ";
+   leftCol[32] = " ";
 
 
    rightCol[0] = " ";
-   rightCol[1] = "Time";
-   rightCol[2] = "Design Thinking";
-   rightCol[3] = "Ecosystems";
-   rightCol[4] = "Culture";
-   rightCol[5] = "Backcasting";
 
-   rightCol[6] = "Healthcare Delivery";
-   rightCol[7] = "Robotics";
-   rightCol[8] = "Caregiving";
+    //MARK G
+   rightCol[1] = "Health Management";
+   rightCol[2] = "Connected Devices";
+   rightCol[3] = "User Experience";
+   rightCol[4] = "Mitigated Risk";
+   rightCol[5] = "The Food and Drug Administration";
+   rightCol[6] = "Service Design";
+   rightCol[7] = "Apps";
 
-   rightCol[9] = "Ecosystems ";
-   rightCol[10] = "Public Policy ";
-   rightCol[11] = "Competitiveness ";
-   rightCol[12] = "Ecosystem Innovation ";
+//Charlie C
+   rightCol[8] = "Design Thinking";
+   rightCol[9] = "Portfolios ";
+   rightCol[10] = "Ecosystems ";
+   rightCol[11] = "Options";
+   rightCol[12] = "Culture";
+   rightCol[13] = "Backcasting";
+
+//Mark H
+   rightCol[14] = "Empathy ";
+   rightCol[15] = "the Silver Economy ";
+   rightCol[16] = "Imperfect Technology ";
+   rightCol[17] = "Risky Ventures ";
+   rightCol[18] = "Long Transitions ";
+   rightCol[19] = "Ecosystems ";   
+   rightCol[20] = "Public Policy ";
+   rightCol[21] = "Competitiveness ";
+   rightCol[22] = "Ecosystem Innovation ";
+
+//MattW
+   rightCol[23] = "the Practical ";
+   rightCol[24] = "the Plausible ";
+   rightCol[25] = "Imagining Futures ";
 
 
-   rightCol[13] = "the Possible ";
-   rightCol[14] = "the Practical ";
-   rightCol[15] = "the Plausible ";
-   rightCol[16] = " ";
-
-
-
+   rightCol[26] = " ";
+   rightCol[27] = " ";   
+   rightCol[28] = " ";
+   rightCol[29] = " ";
+   rightCol[30] = " ";
+   rightCol[31] = " ";
 }
 
 
@@ -151,9 +191,9 @@ function mousePressed() {
     g = random(255);
     b = random(255);
 
-      retriever1 = int(random(1,17));
+      retriever1 = int(random(1,26));           //CHANGE THIS TO ONE MORE THAN THE ARRAY LENGTH
 
-      retriever2 = int(random(1,16));
+      retriever2 = int(random(1,26));
 
       counter = 50;
 
